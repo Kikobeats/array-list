@@ -69,7 +69,7 @@ function ArrayList (limit) {
     }
   })
 
-  Object.defineProperty(list, 'add', {
+  Object.defineProperty(list, 'push', {
     value: function (elem) {
       if (isNill(elem)) throw ArrayListError('ENOELEM', 'Provide a valid element')
       if (list.isFull()) throw ArrayListError('ENOADD', "It's full.")
@@ -77,6 +77,14 @@ function ArrayList (limit) {
       list[index] = elem
       ++index
       return list
+    }
+  })
+
+  Object.defineProperty(list, 'flush', {
+    value: function () {
+      var data = list.slice(0)
+      list.clear()
+      return data
     }
   })
 

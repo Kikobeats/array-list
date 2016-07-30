@@ -44,7 +44,7 @@ Returns how many elements are stored in the array list.
 
 This value is different from .length, that returns the size reserved for the array.
 
-### .add(element)
+### .push(element)
 
 It adds a new element in the array list.
 
@@ -57,6 +57,12 @@ You can specify an index, in other case the methods will return all the elements
 ### .clear
 
 It removes all the elements in the array list.
+
+### .flush()
+
+It returns a copy of the elements in array list.
+
+An alias from concat `.get` +  `.clear`.
 
 ### .isEmpty
 
