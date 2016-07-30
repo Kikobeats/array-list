@@ -7,13 +7,14 @@ function isNill (v) {
   return v == null
 }
 
-function createArray () {
-  return []
+function clearArray (arr) {
+  arr.length = 0
+  return arr
 }
 
-function createArrayLimit (limit) {
-  function arrayLimit () {
-    var arr = []
+function clearArrayLimit (limit) {
+  function arrayLimit (arr) {
+    arr = clearArray(arr)
     arr.length = limit
     return arr
   }
@@ -21,9 +22,9 @@ function createArrayLimit (limit) {
   return arrayLimit
 }
 
-function createArrayFactory (limit) {
-  if (isInteger(limit) && limit > 0) return createArrayLimit(limit)
-  return createArray
+function clearArrayFactory (limit) {
+  if (isInteger(limit) && limit > 0) return clearArrayLimit(limit)
+  return clearArray
 }
 
 /**
@@ -35,13 +36,13 @@ function createArrayFactory (limit) {
 function ArrayList (limit) {
   if (!(this instanceof ArrayList)) return new ArrayList(limit)
 
-  var factory = createArrayFactory(limit)
+  var clear = clearArrayFactory(limit)
+  var list = []
   var index
-  var list
 
   function reset () {
     index = 0
-    list = factory()
+    list = clear(list)
   }
 
   reset()
