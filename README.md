@@ -30,7 +30,7 @@ var arr = arrayList()
 
 ## API
 
-### arrayList({limit})
+### arrayList([limit])
 
 #### limit
 
@@ -38,15 +38,20 @@ Type: `integer`
 
 Specify the limit of the array. It's need to be a positive integer number.
 
-### .size
+### .size()
 
 Returns how many elements are stored in the array list.
 
 This value is different from .length, that returns the size reserved for the array.
 
-### .push(element)
+### .push({element})
 
 It adds a new element in the array list.
+
+This methods could be throw an error if:
+
+- You don't provide a valid element.
+- The array list is full.
 
 ### .get([element])
 
@@ -54,7 +59,7 @@ It gets the elements in the array list.
 
 You can specify an index, in other case the methods will return all the elements.
 
-### .clear
+### .clear()
 
 It removes all the elements in the array list.
 
@@ -64,11 +69,11 @@ It returns a copy of the elements in array list.
 
 An alias from concat `.get` +  `.clear`.
 
-### .isEmpty
+### .isEmpty()
 
 Returns `true` is the `.size` is 0; `false` in other case.
 
-### .isFull
+### .isFull()
 
 Returns `true` is the `.size` is equal to `limit`; `false` in other case.
 
