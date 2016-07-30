@@ -8,11 +8,17 @@ function createArray () {
 }
 
 function createArrayLimit (limit) {
-  return new Array(limit)
+  function arrayLimit () {
+    var arr = []
+    arr.length = limit
+    return arr
+  }
+
+  return arrayLimit
 }
 
 function createArrayFactory (limit) {
-  if (isInteger(limit) && limit > 0) return createArrayLimit
+  if (isInteger(limit) && limit > 0) return createArrayLimit(limit)
   return createArray
 }
 
@@ -36,45 +42,59 @@ function ArrayList (limit) {
 
   reset()
 
-  var that = {}
+  var isFullFn
 
   if (isInteger(limit)) {
-    that.isFull = function isFullLimit () {
+    isFullFn = function isFullLimit () {
       return index === limit
     }
   } else {
-    that.isFull = function isFull () {
+    isFullFn = function isFull () {
       return false
     }
   }
 
-  that.size = function size () {
-    return index
-  }
+  Object.defineProperty(list, 'isFull', {
+    value: isFullFn
+  })
 
-  that.add = function add (e) {
-    if (that.isFull()) throw ArrayListError('ENOADD', "It's full.")
+  Object.defineProperty(list, 'size', {
+    value: function () {
+      return index
+    }
+  })
 
-    list[index] = e
-    ++index
-    return list
-  }
+  Object.defineProperty(list, 'add', {
+    value: function (e) {
+      if (list.isFull()) throw ArrayListError('ENOADD', "It's full.")
 
-  that.get = function get (index) {
-    if (index) return list[index]
-    return list
-  }
+      list[index] = e
+      ++index
+      return list
+    }
+  })
 
-  that.clear = function clear () {
-    reset()
-    return list
-  }
+  Object.defineProperty(list, 'get', {
+    value: function (index) {
+      if (index != null) return list[index]
+      return list
+    }
+  })
 
-  that.isEmpty = function isEmpty () {
-    return index === 0
-  }
+  Object.defineProperty(list, 'clear', {
+    value: function () {
+      reset()
+      return list
+    }
+  })
 
-  return Object.assign(list, that)
+  Object.defineProperty(list, 'isEmpty', {
+    value: function () {
+      return index === 0
+    }
+  })
+
+  return list
 }
 
 module.exports = ArrayList
