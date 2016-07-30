@@ -1,3 +1,10 @@
+<a name="1.0.2"></a>
+## 1.0.2 (2016-07-30)
+
+* .add → .push ([0e9d8bc](https://github.com/kikobeats/array-list/commit/0e9d8bc))
+
+
+
 <a name="1.0.1"></a>
 ## 1.0.1 (2016-07-30)
 
