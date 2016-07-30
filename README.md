@@ -39,10 +39,32 @@ Type: `integer`
 Specify the limit of the array. It's need to be a positive integer number.
 
 ### .size
-### .add
-### .get
+
+Returns how many elements are stored in the array list.
+
+This value is different from .length, that returns the size reserved for the array.
+
+### .add(element)
+
+It adds a new element in the array list.
+
+### .get([element])
+
+It gets the elements in the array list.
+
+You can specify an index, in other case the methods will return all the elements.
+
 ### .clear
+
+It removes all the elements in the array list.
+
 ### .isEmpty
+
+Returns `true` is the `.size` is 0; `false` in other case.
+
+### .isFull
+
+Returns `true` is the `.size` is equal to `limit`; `false` in other case.
 
 ## License
 
