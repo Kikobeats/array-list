@@ -2,7 +2,7 @@
   "name": "array-list",
   "description": "Simple array list implementation.",
   "homepage": "https://github.com/Kikobeats/array-list",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "author": {
     "name": "Kiko Beats",

@@ -1,3 +1,10 @@
+<a name="1.0.1"></a>
+## 1.0.1 (2016-07-30)
+
+* Fix clear array in consecutive calls ([dc7a888](https://github.com/kikobeats/array-list/commit/dc7a888))
+
+
+
 <a name="1.0.0"></a>
 # 1.0.0 (2016-07-30)
 
