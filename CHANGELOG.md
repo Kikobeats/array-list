@@ -1,3 +1,13 @@
+<a name="1.0.3"></a>
+## 1.0.3 (2016-07-31)
+
+* Fix typo ([0747192](https://github.com/kikobeats/array-list/commit/0747192))
+* Fix typo ([e744122](https://github.com/kikobeats/array-list/commit/e744122))
+* Remove extra line to make it a little bit small ([8e8a74a](https://github.com/kikobeats/array-list/commit/8e8a74a))
+* chore(package): update whoops to version 3.0.0 ([61bf209](https://github.com/kikobeats/array-list/commit/61bf209))
+
+
+
 <a name="1.0.2"></a>
 ## 1.0.2 (2016-07-30)
 
