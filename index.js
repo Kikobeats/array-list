@@ -74,8 +74,7 @@ function ArrayList (limit) {
       if (isNill(elem)) throw ArrayListError('ENOELEM', 'Provide a valid element')
       if (list.isFull()) throw ArrayListError('ENOADD', "It's full.")
 
-      list[index] = elem
-      ++index
+      list[index++] = elem
       return list
     }
   })
