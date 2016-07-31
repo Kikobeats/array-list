@@ -71,7 +71,7 @@ function ArrayList (limit) {
 
   Object.defineProperty(list, 'push', {
     value: function (elem) {
-      if (isNill(elem)) throw ArrayListError('ENOELEM', 'Provide a valid element')
+      if (isNill(elem)) throw ArrayListError('ENOELEM', 'Provide a valid element.')
       if (list.isFull()) throw ArrayListError('ENOADD', "It's full.")
 
       list[index++] = elem
