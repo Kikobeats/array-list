@@ -77,6 +77,10 @@ Returns `true` is the `.size` is 0; `false` in other case.
 
 Returns `true` is the `.size` is equal to `limit`; `false` in other case.
 
+## Related
+
+* [array-future](https://github.com/Kikobeats/array-future) – A collection of Array prototypes prollyfills as proposition for ECMAScript 7.
+
 ## License
 
 MIT © [Kiko Beats](https://github.com/Kikobeats).
