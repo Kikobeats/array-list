@@ -3,7 +3,7 @@
 var ArrayListError = require('whoops').create('ArrayListError')
 var isInteger = Number.isInteger
 
-function isNill (v) {
+function isNil (v) {
   return v == null
 }
 
@@ -71,7 +71,7 @@ function ArrayList (limit) {
 
   Object.defineProperty(list, 'push', {
     value: function (elem) {
-      if (isNill(elem)) throw ArrayListError('ENOELEM', 'Provide a valid element.')
+      if (isNil(elem)) throw ArrayListError('ENOELEM', 'Provide a valid element.')
       if (list.isFull()) throw ArrayListError('ENOADD', "It's full.")
 
       list[index++] = elem
@@ -89,7 +89,7 @@ function ArrayList (limit) {
 
   Object.defineProperty(list, 'get', {
     value: function (index) {
-      if (isNill(index)) return list
+      if (isNil(index)) return list
       return list[index]
     }
   })
