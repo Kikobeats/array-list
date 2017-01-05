@@ -1,3 +1,12 @@
+<a name="1.0.4"></a>
+## 1.0.4 (2017-01-05)
+
+* fix(package): update whoops to version 3.1.0 ([4fbc3da](https://github.com/kikobeats/array-list/commit/4fbc3da))
+* Fix typo ([1d3674f](https://github.com/kikobeats/array-list/commit/1d3674f))
+* Update README.md ([df0cf16](https://github.com/kikobeats/array-list/commit/df0cf16))
+
+
+
 <a name="1.0.3"></a>
 ## 1.0.3 (2016-07-31)
 
