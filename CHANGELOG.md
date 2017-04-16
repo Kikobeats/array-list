@@ -1,3 +1,11 @@
+<a name="1.0.5"></a>
+## 1.0.5 (2017-04-16)
+
+* Improve how to clear the array ([49a3571](https://github.com/kikobeats/array-list/commit/49a3571))
+* Update travis builds ([abc5428](https://github.com/kikobeats/array-list/commit/abc5428))
+
+
+
 <a name="1.0.4"></a>
 ## 1.0.4 (2017-01-05)
 
