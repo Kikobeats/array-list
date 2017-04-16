@@ -1,14 +1,12 @@
 'use strict'
 
-var ArrayListError = require('whoops').create('ArrayListError')
-var isInteger = Number.isInteger
+const ArrayListError = require('whoops').create('ArrayListError')
+const isInteger = Number.isInteger
 
-function isNil (v) {
-  return v == null
-}
+const isNil = v => v == null
 
 function clearArray (arr) {
-  arr.length = 0
+  while (arr.length > 0) arr.pop()
   return arr
 }
 
@@ -36,9 +34,9 @@ function clearArrayFactory (limit) {
 function ArrayList (limit) {
   if (!(this instanceof ArrayList)) return new ArrayList(limit)
 
-  var clear = clearArrayFactory(limit)
-  var list = []
-  var index
+  const clear = clearArrayFactory(limit)
+  let list = []
+  let index
 
   function reset () {
     index = 0
@@ -47,7 +45,7 @@ function ArrayList (limit) {
 
   reset()
 
-  var isFullFn
+  let isFullFn
 
   if (isInteger(limit)) {
     isFullFn = function isFullLimit () {
