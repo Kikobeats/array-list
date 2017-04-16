@@ -2,11 +2,10 @@
 
 const ArrayListError = require('whoops').create('ArrayListError')
 const isInteger = Number.isInteger
-
 const isNil = v => v == null
 
 function clearArray (arr) {
-  while (arr.length > 0) arr.pop()
+  arr.length = 0
   return arr
 }
 
