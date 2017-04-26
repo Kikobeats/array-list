@@ -61,9 +61,7 @@ function ArrayList (limit) {
   })
 
   Object.defineProperty(list, 'size', {
-    value: function () {
-      return index
-    }
+    value: () => index
   })
 
   Object.defineProperty(list, 'push', {
@@ -77,7 +75,7 @@ function ArrayList (limit) {
   })
 
   Object.defineProperty(list, 'flush', {
-    value: function () {
+    value: () => {
       var data = list.slice(0)
       list.clear()
       return data
@@ -85,23 +83,21 @@ function ArrayList (limit) {
   })
 
   Object.defineProperty(list, 'get', {
-    value: function (index) {
+    value: (index) => {
       if (isNil(index)) return list
       return list[index]
     }
   })
 
   Object.defineProperty(list, 'clear', {
-    value: function () {
+    value: () => {
       reset()
       return list
     }
   })
 
   Object.defineProperty(list, 'isEmpty', {
-    value: function () {
-      return index === 0
-    }
+    value: () => index === 0
   })
 
   return list
