@@ -1,3 +1,11 @@
+<a name="1.0.6"></a>
+## 1.0.6 (2017-04-26)
+
+* Fat arrow refactor ([fc677e0](https://github.com/kikobeats/array-list/commit/fc677e0))
+* Simple clean array ([b57c022](https://github.com/kikobeats/array-list/commit/b57c022))
+
+
+
 <a name="1.0.5"></a>
 ## 1.0.5 (2017-04-16)
 
