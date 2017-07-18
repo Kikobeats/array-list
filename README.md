@@ -1,7 +1,5 @@
 # array-list
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/Kikobeats/array-list.svg)](https://greenkeeper.io/)
-
 ![Last version](https://img.shields.io/github/tag/Kikobeats/array-list.svg?style=flat-square)
 [![Build Status](https://img.shields.io/travis/Kikobeats/array-list/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/array-list)
 [![Coverage Status](https://img.shields.io/coveralls/Kikobeats/array-list.svg?style=flat-square)](https://coveralls.io/github/Kikobeats/array-list)
