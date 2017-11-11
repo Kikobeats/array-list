@@ -1,6 +1,6 @@
 'use strict'
 
-const ArrayListError = require('whoops').create('ArrayListError')
+const ArrayListError = require('whoops')('ArrayListError')
 const isInteger = Number.isInteger
 const isNil = v => v == null
 
