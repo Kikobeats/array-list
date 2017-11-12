@@ -1,3 +1,16 @@
+<a name="1.0.7"></a>
+## 1.0.7 (2017-11-12)
+
+* Update index.js ([cb5c264](https://github.com/kikobeats/array-list/commit/cb5c264))
+* Update interface ([81d5dad](https://github.com/kikobeats/array-list/commit/81d5dad))
+* Update README.md ([85dc7aa](https://github.com/kikobeats/array-list/commit/85dc7aa))
+* Update README.md ([dcc2b29](https://github.com/kikobeats/array-list/commit/dcc2b29))
+* docs(readme): add Greenkeeper badge ([d25e6d6](https://github.com/kikobeats/array-list/commit/d25e6d6))
+* docs(readme): add Greenkeeper badge ([65da9ea](https://github.com/kikobeats/array-list/commit/65da9ea))
+* chore(package): update dependencies ([d52544e](https://github.com/kikobeats/array-list/commit/d52544e))
+
+
+
 <a name="1.0.6"></a>
 ## 1.0.6 (2017-04-26)
 
