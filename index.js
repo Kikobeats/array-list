@@ -1,6 +1,6 @@
 'use strict'
 
-const ArrayListError = require('whoops')('ArrayListError')
+const whoops = require('whoops')
 const isInteger = Number.isInteger
 const isNil = v => v == null
 
@@ -23,6 +23,8 @@ function clearArrayFactory (limit) {
   if (isInteger(limit) && limit > 0) return clearArrayLimit(limit)
   return clearArray
 }
+
+const ArrayListError = whoops('ArrayListError')
 
 /**
  * Simple Array List implementation.
@@ -66,8 +68,19 @@ function ArrayList (limit) {
 
   Object.defineProperty(list, 'push', {
     value: function (elem) {
-      if (isNil(elem)) throw ArrayListError('ENOELEM', 'Provide a valid element.')
-      if (list.isFull()) throw ArrayListError('ENOADD', "It's full.")
+      if (isNil(elem)) {
+        throw ArrayListError({
+          code: 'ENOELEM',
+          message: 'Provide a valid element.'
+        })
+      }
+
+      if (list.isFull()) {
+        throw ArrayListError({
+          code: 'ENOADD',
+          message: "It's full."
+        })
+      }
 
       list[index++] = elem
       return list
