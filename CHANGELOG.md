@@ -1,3 +1,10 @@
+## <small>1.0.8 (2020-01-20)</small>
+
+* build: update metadata ([dc3cdb2](https://github.com/kikobeats/array-list/commit/dc3cdb2))
+* Bump whoops from 4.0.2 to 4.1.0 ([50862ef](https://github.com/kikobeats/array-list/commit/50862ef))
+
+
+
 <a name="1.0.7"></a>
 ## 1.0.7 (2017-11-12)
 
