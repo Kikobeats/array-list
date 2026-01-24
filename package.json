@@ -24,7 +24,7 @@
     "simple"
   ],
   "dependencies": {
-    "whoops": "~5.0.1"
+    "whoops": "~5.1.0"
   },
   "devDependencies": {
     "coffee-script": "latest",
