@@ -1,6 +1,6 @@
 {
   "name": "array-list",
-  "description": "Simple array list implementation.",
+  "description": "Simple fixed-capacity array list with push, pop, and size helpers for bounded collections.",
   "homepage": "https://github.com/Kikobeats/array-list",
   "version": "1.0.8",
   "main": "index.js",
@@ -18,10 +18,15 @@
   },
   "keywords": [
     "array",
-    "implementation",
+    "bounded",
+    "buffer",
+    "capacity",
+    "collection",
     "limit",
     "list",
-    "simple"
+    "pop",
+    "push",
+    "queue"
   ],
   "dependencies": {
     "whoops": "~5.1.0"
